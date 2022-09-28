@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Top Categories CSS Here */
+#backgroundBox {
+  padding: 10px;
+  color: white;
+  background-color: #01040d;
+}
+#backgroundBox h4 {
+  font-size: 16px;
+  margin: 10px;
+  color: #787677;
+}
+#container {
+  width: 70%;
+  margin: auto;
+}
+#topCategories > div:nth-child(1) {
+  border-bottom: 1px solid #787677;
+}
+#topCategories > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 18px;
+}
+#topCategories > div > div {
+  width: 250px;
+}
+#topCategories li {
+  padding-bottom: 18px;
+}
+#lineBr {
+  border-bottom: 1px solid #787677;
+}
+
+/* Last Box CSS Here */
+#lastBox {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #787677;
+}
+/* Left Area */
+#leftArea {
+  width: 240px;
+}
+#followImg {
+  width: 90%;
+  background-color: black;
+  border-radius: 8px;
+}
+#followImg > img {
+  width: 15%;
+  margin: 3px 8px;
+}
+#dloadImg {
+  width: 90%;
+  border-radius: 8px;
+  padding-bottom: 5px;
+}
+#dloadImg > img {
+  width: 15%;
+  margin: 3px 8px;
+}
+#newsGuard{
+  padding-top: 10px;
+  border-top:1px solid #787677;
+}
+#newsGuard>img{
+  width: 45%;
+  margin: 5px 8px;
+  opacity: .4;
+}
+#newsGuard>ul>li{
+  font-size: 12px;
+  line-height: 1.6;
+  list-style-image: url("https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-check.svg");
+}
+
+/* Center Area */
+#centerArea{
+  width: 500px;
+  border-left: 1px solid #787677;
+}
+#express{
+  display: flex;
+}
+#express>ul{
+  width: 50%;
+}
+#express>ul>li{
+  font-size: 13px;
+  padding-bottom: 15px;
+  list-style: none;
+}
+
+/* Right Area */
+#rightArea{
+  width: 240px;
+  border-left: 1px solid #787677;
+}
+#quickList>li{
+  padding-bottom: 15px;
+  font-size: 13px;
+}
+
+/* Copyright Section */
+
+#copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#copyright>p{
+  font-size: 13px;
+  color: #787677;
+}
+#copyright>img{
+  width: 200px;
+}
+
+/* Medium Screen */
+@media all and (max-width:1080px){
+  #topCategories > div:nth-child(2){
+    flex-wrap: wrap;
+  }
+  #express{
+    flex-wrap: wrap;
+  }
+}
+
+/* Small Screen */
+@media all and (min-width:320px) and (max-width:900px){
+  #lastBox {
+    flex-wrap: wrap;
+  }
+  #copyright{
+    flex-wrap: wrap;
+  }
+}

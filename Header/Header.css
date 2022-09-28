@@ -1,0 +1,233 @@
+*{
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Bar CSS Starts Here */
+
+#topBar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topBar>div{
+  display: flex;
+  width: 400px;
+}
+#topBar>div:nth-child(1){
+  justify-content: flex-start;
+}
+#topBar>div:nth-child(2){
+  justify-content: center;
+}
+#topBar>div:nth-child(3){
+  justify-content: flex-end;
+}
+#topBar>div:nth-child(2)>p>a{
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+#topBar>div:nth-child(2)>p{
+  margin: 0;
+  padding: 0;
+}
+#topBar>div:nth-child(2)>p>a:nth-child(1){
+  font-weight: 700;
+}
+#topBar>div:nth-child(3)>img{
+  cursor: pointer;
+  width: 5%;
+  margin: 5px;
+}
+#topBar button{
+  font-size: 16px;
+  margin: 5px;
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navbar CSS Starts Here */
+#navbarContainer{
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+#navbar {
+  background-color: white;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  border-top: 1px solid rgb(209, 209, 209);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+#linkDiv {
+  display: flex;
+}
+#linkDiv>div{
+  display: flex;
+  align-items: center;
+}
+#linkDiv a{
+  text-decoration: none;
+  font-size: 13px;
+  margin: 6px;
+  color: black;
+}
+#linkDiv a:hover{
+  color:#d70000
+}
+
+#navbar button{
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#navbar button:nth-child(1){
+  background-color: #FFB900;
+}
+#navbar button:nth-child(2){
+  color: white;
+  font-weight: 500;
+  background-color: #3b4057;
+}
+
+/* Middle Bar CSS Start Here */
+#middleBar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+#middleBar>div{
+  width: 400px;
+}
+#dateTime{
+  font-size: 12px;
+}
+#dateTime>p>span{
+  font-weight: 900;
+}
+#advertise{
+  text-align: right;
+}
+#logo{
+  text-align: center;
+}
+#logo>img{
+  width: 100%;
+}
+#logo>h5{
+  padding: 0;
+  margin: 0;
+}
+
+/* Bottom Bar CSS Start Here */
+
+#bottomBar {
+  border-top: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 90%;
+  margin: auto;
+  margin-top: 3px;
+  font-size: 12px;
+}
+#bottomBar > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bottomMid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#bottomSmall {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#bottomBar p {
+  padding: 5px;
+  margin: 5px;
+  color: #d70000;
+}
+#bottomBar button {
+  margin: 8px;
+  border: none;
+  outline: none;
+  padding: 2px 12px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+#bottomBar button:hover {
+  color: #d70000;
+  cursor: pointer;
+}
+
+/* Medium Screen */
+@media all and (max-width:1240px){
+  #mid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #bottomMid{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Small Screen */
+@media all and (min-width:320px) and (max-width:720px){
+  #topBar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #topBar>div:nth-child(1){
+    justify-content: center;
+  }
+  #topBar>div:nth-child(2){
+    justify-content: center;
+  }
+  #topBar>div:nth-child(3){
+    justify-content: center;
+  }
+  #small{
+    display: flex;
+    flex-direction: column;
+  }
+  #middleBar{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #middleBar>div{
+    text-align: center;
+  }
+  #navbarContainer {
+    position: static;
+  }
+  #bottomSmall{
+    display: flex;
+    flex-direction: column;
+  }
+}
