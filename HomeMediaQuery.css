@@ -28,6 +28,9 @@
   #part3{
     flex-wrap: wrap;
   }
+  #part4{
+    flex-wrap: wrap;
+  }
   #part1>div:nth-child(1){
     width: auto;
     padding-right: 20px;
