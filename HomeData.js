@@ -184,4 +184,51 @@ let part3Data = [
   "Six airbags mandatory in passenger cars from Oct 1, 2023, says Gadkari",
   "Jasprit Bumrah likely to be ruled out of T20 World Cup",
   "G-20 presidency an opportunity to position India as voice of Global South",
-]
+];
+
+let cityImg = {
+  delhi:"https://images.indianexpress.com/2022/09/delhi-hc-2.jpg?w=303",
+  mumbai:"https://images.indianexpress.com/2022/09/mumbai-pune-expressway.jpg?w=303",
+  pune:"https://images.indianexpress.com/2022/09/India-coronavirus-vaccine.jpg?w=303",
+  ahmedabad:"https://images.indianexpress.com/2022/09/Modi-3-1.jpg?w=303",
+  hydrabad:"https://images.indianexpress.com/2022/09/Elizabeth-1-3.jpg?w=303",
+};
+
+let cityImgTitle = {
+  delhi:"Delhi HC Bar election results out, president has 'long-term' vision for association",
+  mumbai:"Mumbai-Pune Expressway Missing Link project: Maharashtra to get India's highest cable-stayed road bridge",
+  pune:"Special Covid vaccination drive saw merely 10% of total beneficiaries getting jabbed in Maharashtra: Data",
+  ahmedabad:"Surat will emerge as safest, convenient diamond trading hub after DREAM project is completed: PM Modi",
+  hydrabad:"'Won't say how much I've spent': Man setting up library of stamps, notes featuring Queen Elizabeth",
+  };
+
+  let delhi = [
+    "Harpic vs Domex ad case: Advertiser cannot disparage, defame goods of competitor, says Delhi HC",
+    "Delhi's IGI Airport becomes India's first '5G-ready' airport",
+    "Quack arrested for death of Maruti Suzuki intern in Gurugram",
+    "Delhi Police conduct mock drill of emergency response plan in Northeast district",
+  ];
+  let mumbai = [
+    "Mumbai: Woman from Addis Ababa held for 'smuggling cocaine'",
+    "Will publish Ambedkar's MSc thesis, provide more facilities to panel: Maharashtra govt to HC",
+    "Traffickers using 'black cocaine' to avoid being caught by sniffer dogs: NCB",
+    "Controlling institutions, BJP uses Shinde camp against Maharashtra, says Saamana",
+  ];
+  let pune = [
+    "Pune Infra Watch: PMC proposes to provide 24X7 water supply system in Sus and Mahalunge",
+    "Pune: Anti-encroachment drive in Balewadi High Street, sheds of hotels, restaurants pulled down",
+    "Pune: Seven-year-old girl goes missing, father held for murder",
+    "Pune: One dead, three injured as cement mixer truck crashes into autorickshaws",
+  ];
+  let ahmedabad = [
+    "Two FIRs lodged over clashes between NSUI, 'ABVP members'",
+    "2002 Gujarat riots: Ex-DGP RB Sreekumar granted interim bail till November 15",
+    "PM Modi to launch Ahmedabad Metro Phase 1, flag off Vande Bharat Express during two-day Gujarat visit",
+    "Hindutva is a way of life, why is it related to extremism, asks actor Aashiesh Sharma",
+  ];
+  let hydrabad = [
+    "After tweet on Rs 7,000 traffic fine goes viral, Telangana police say 'officer concerned' cleared all dues",
+    "BJP's Telangana unit welcomes Centre's decision to impose ban on PFI and its affiliates, lauds PM Modi",
+    "Andhra Pradesh: CM YS Jagan Mohan Reddy launches 'Visit AP' campaign",
+    "Hyderabad: Burqa-clad sisters booked for breach of peace, taken into custody",
+  ];
