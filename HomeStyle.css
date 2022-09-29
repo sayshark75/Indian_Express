@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/* Top Heading Box CSS */
+
+#topHead{
+  border: 1px solid #d3d3d3;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'PT Serif', serif;
+}
+#topSubHead1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topHead h1:hover, #topHead p:hover{
+color: #d70000;
+cursor: pointer;
+}
+#topSubHead1 h1{
+  font-size: 30px;
+}
+#topSubHead1 p{
+  font-size: 16px;
+}
+#topSubHead1 div{
+  width: 440px;
+}
+#topSubHead1>div>img{
+  width: 100%;
+}
+#topSubHead2{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d3d3d3;
+}
+#topSubHead2>div{
+  padding: 0 20px;
+}
+#topSubHead2>div:nth-child(2)>p{
+  padding: 0 20px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+}
+
+/* Main Page Box CSS */
+
+#mainPage{
+  width: 63%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#mainPage h1:hover, #mainPage p:hover,#mainPage h3:hover, #mainPage h4:hover, #mainPage h5:hover{
+  color: #d70000;
+  cursor: pointer;
+  }
+#sectionLeft{
+  width: 63%;
+}
+#sectionRight{
+  width: 33%;
+}
+
+/* Section Left Work Here */
+#part1{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'PT Serif', serif;
+}
+#part1>div:nth-child(1){
+  width: 290px;
+}
+#part1>div:nth-child(1)>h3{
+  font-size: 20px;
+}
+#part1>div:nth-child(1)>p{
+  font-size: 14px;
+}
+#part1>div:nth-child(1)>img{
+  width: 100%;
+}
+#part1>div:nth-child(2){
+  width: 290px;
+}
+#part1>div:nth-child(2)>p{
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted gray;
+}
+/* Section Left Part 2 */
+#part2{
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  border-top: 3px solid rgb(34, 34, 59);
+}
+#part2>div:nth-child(1){
+  width: 290px;
+}
+#part2>div:nth-child(2){
+  background-color: #eeeeee;
+  width: 290px;
+}
+#latestNews>div{
+  margin: 15px;
+}
+#latestNews>div>h4{
+  font-size: 16px;
+}
+#latestNews>div>p{
+  padding-bottom: 15px;
+  font-size: 14px;
+  border-bottom: 1px dotted gray;
+}
+
+/* Section Left top News */
+#topNews>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#topNews>div>img{
+  width: 30%;
+  height: min-content;
+}
+#topNews>div>p{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: 'PT Serif', serif;
+}
+
+/* Section Left Part 3 */
+#part3{
+  margin-top: 10px;
+  border-top: 1px dotted gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'PT Serif', serif;
+}
+#part3>div:nth-child(1){
+  width: 290px;
+}
+#part3>div:nth-child(1)>h3{
+  font-size: 20px;
+}
+#part3>div:nth-child(1)>p{
+  font-size: 14px;
+}
+#part3>div:nth-child(1)>img{
+  width: 100%;
+}
+#part3>div:nth-child(2){
+  width: 290px;
+}
+#part3>div:nth-child(2)>p{
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted gray;
+}
+
+/* Section Right Work Here */
+#sectionRight{
+  border-left: 1px dotted gray;
+  padding: 15px;
+}
+/* Section Right Express View  */
+#expressView>h4{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dotted gray;
+}
+#expressView>div{
+  display: flex;
+  justify-content: space-between;
+}
+#expressView>div>img{
+  width: 30%;
+}
+#expressView>div>p{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 14px;
+}
+
+/* Section Right Opinion List */
+#opinion>h4{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dotted gray;
+}
+#opinion>div{
+  display: flex;
+  justify-content: space-between;
+  border-top:1px dotted gray;
+  padding-top: 10px;
+}
+#opinion>div>div{
+}
+#opinion>div>div>p{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+}
+#opinion>div>div>h5{
+  padding: 0;
+  margin: 10px 0;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+#opinion>div>div:nth-child(2){
+  border: 1px solid gray;
+  width: 35%;
+  height: min-content;
+  border-radius:250px;
+  overflow: hidden;
+}
+#opinion>div>img{
+  width: 60px;
+  height: min-content;
+  margin-left: 40px;
+  border-radius: 200px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+/* Section Right LifeStyle */
+#lifeStyle>h4{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dotted gray;
+}
+#lifeStyle>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 0;
+  padding: 10px 0;
+  border-bottom: 1px dotted gray;
+}
+#lifeStyle>div>img{
+  width: 30%;
+  height: min-content;
+}
+#lifeStyle>div>p{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 14px;
+}
