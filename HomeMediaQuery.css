@@ -1,0 +1,50 @@
+@media all and (max-width:1280px){
+  #topHead{
+    width: 90%;
+  }
+  #topSubHead1{
+    flex-wrap: wrap;
+  }
+  #topSubHead1>div{
+    padding-left: 20px;
+    border: 1px solid red;
+  }
+  #mainPage{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  #sectionLeft{
+    width: 95%;
+  }
+  #sectionRight{
+    width: 80%;
+  }
+  #part1{
+    flex-wrap: wrap;
+  }
+  #part2{
+    flex-wrap: wrap;
+  }
+  #part3{
+    flex-wrap: wrap;
+  }
+  #part1>div:nth-child(1){
+    width: auto;
+    padding-right: 20px;
+  }
+  #part1>div:nth-child(2){
+    width: auto;
+  }
+}
+
+@media all and (min-width:320px) and (max-width:720px){
+  #topHead{
+    width: 90%;
+  }
+  #topSubHead2{
+    flex-wrap: wrap;
+  }
+  #sectionRight{
+    width: 95%;
+  }
+}

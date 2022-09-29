@@ -1,13 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  
 }
 /* Top Categories CSS Here */
 #backgroundBox {
   padding: 10px;
   color: white;
   background-color: #01040d;
+  font-family: sans-serif;
 }
 #backgroundBox h4 {
   font-size: 16px;
@@ -43,10 +44,11 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom:1px solid #787677;
+  font-family: sans-serif;
 }
 /* Left Area */
 #leftArea {
-  width: 240px;
+  width: 23%;
 }
 #followImg {
   width: 90%;
@@ -54,7 +56,7 @@ body {
   border-radius: 8px;
 }
 #followImg > img {
-  width: 15%;
+  width: 35px;
   margin: 3px 8px;
 }
 #dloadImg {
@@ -63,7 +65,7 @@ body {
   padding-bottom: 5px;
 }
 #dloadImg > img {
-  width: 15%;
+  width: 35px;
   margin: 3px 8px;
 }
 #newsGuard{
@@ -71,7 +73,7 @@ body {
   border-top:1px solid #787677;
 }
 #newsGuard>img{
-  width: 45%;
+  width: 120px;
   margin: 5px 8px;
   opacity: .4;
 }
@@ -131,6 +133,9 @@ body {
   #express{
     flex-wrap: wrap;
   }
+  #express>ul{
+    width: auto;
+  }
 }
 
 /* Small Screen */
@@ -140,5 +145,18 @@ body {
   }
   #copyright{
     flex-wrap: wrap;
+  }
+  #container {
+    width: 100%;
+  }
+  #leftArea {
+    width: auto;
+  }
+  #container {
+    width: 80%;
+  }
+  #rightArea{
+    width: auto;
+    border-left: 1px solid #787677;
   }
 }
