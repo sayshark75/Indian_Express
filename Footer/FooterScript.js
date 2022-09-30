@@ -115,6 +115,11 @@ topCat1.forEach((elem) => {
   let list = document.createElement("li");
   list.innerText = elem;
   list.style.cursor="pointer"
+  if(elem == "Explained News"){
+    list.addEventListener("click",(e) => {
+      window.location.href = "/ExplainedPage.html";
+    });
+  }
   document.querySelector("#tc1").append(list);
 });
 topCat2.forEach((elem) => {
@@ -186,17 +191,35 @@ latest4.forEach((elem) => {
   document.querySelector("#latest4").append(list);
 });
 
-followImg.forEach((elem) => {
+followImg.forEach((elem,i) => {
   let newImg = document.createElement("img");
   newImg.src = elem;
   newImg.style.cursor="pointer"
+  newImg.addEventListener("click",(e) => {
+    if(i==0){
+      window.open("https://www.facebook.com/indianexpress");
+    }else if(i==1){
+      window.open("https://twitter.com/indianexpress");
+    }else if(i==2){
+      window.open("https://www.linkedin.com/company/indian-express/","_blank");
+    }else if(i==3){
+      window.open("https://www.instagram.com/indianexpress/","_blank");
+    }
+  });
   document.querySelector("#followImg").append(newImg);
 });
 
-dloadImg.forEach((elem) => {
+dloadImg.forEach((elem,i) => {
   let newImg = document.createElement("img");
   newImg.src = elem;
   newImg.style.cursor="pointer"
+  newImg.addEventListener("click",(e) => {
+    if(i==0){
+      window.open("https://play.google.com/store/apps/details?id=com.indianexpress.android&hl=en","_blank");
+    }else if(i==1){
+      window.open("https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8","_blank");
+    }
+  });
   document.querySelector("#dloadImg").append(newImg);
 });
 

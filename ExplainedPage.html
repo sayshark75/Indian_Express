@@ -23,12 +23,12 @@
     <!-- Styles CSS Linking -->
     <link rel="stylesheet" href="/Header/Header.css" />
     <link rel="stylesheet" href="/Footer/footer.css" />
-    <link rel="stylesheet" href="/HomeStyle.css" />
-    <link rel="stylesheet" href="/HomeMediaQuery.css" />
+    <link rel="stylesheet" href="/ExplainedPageStyle.css" />
+    <link rel="stylesheet" href="/ExplainedPageMQ.css" />
 
     <!-- Favicon and Title -->
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
-    <title>Indian Express / Home</title>
+    <title>Indian Express / Explained</title>
   </head>
   <body>
     <!-- Header Part Here -->
@@ -40,15 +40,20 @@
       <div>
         <p>
           <a href="">ENGLISH</a> |
-          <a href="https://tamil.indianexpress.com/">தமிழ்</a> |
-          <a href="https://bengali.indianexpress.com/">বাংলা</a> |
-          <a href="https://malayalam.indianexpress.com/">മലയാളം</a> |
-          <a href="https://www.jansatta.com/">हिंदी</a> |
-          <a href="https://www.loksatta.com/">मराठी</a>
+          <a href="https://tamil.indianexpress.com/" target="_blank">தமிழ்</a> |
+          <a href="https://bengali.indianexpress.com/" target="_blank">বাংলা</a>
+          |
+          <a href="https://malayalam.indianexpress.com/" target="_blank"
+            >മലയാളം</a
+          >
+          | <a href="https://www.jansatta.com/" target="_blank">हिंदी</a> |
+          <a href="https://www.loksatta.com/" target="_blank">मराठी</a>
         </p>
       </div>
       <div id="newsLetterDiv">
-        <button>Newsletter <i class="fa-regular fa-newspaper"></i></button>
+        <button id="newsLetter">
+          Newsletter <i class="fa-regular fa-newspaper"></i>
+        </button>
       </div>
     </div>
     <div id="middleBar">
@@ -77,15 +82,11 @@
         <div id="linkDiv">
           <a href="/HomePage.html">Home</a>
           <a href="/ExplainedPage.html">Explained</a>
-          <a href="https://indianexpress.com/section/political-pulse/"
-            >Political Pulse</a
-          >
+          <a href="https://indianexpress.com/section/political-pulse/">Political Pulse</a>
           <a href="https://indianexpress.com/section/india/">India</a>
           <a href="https://indianexpress.com/section/cities/">Cities</a>
           <a href="https://indianexpress.com/section/opinion/">Openion</a>
-          <a href="https://indianexpress.com/section/entertainment/"
-            >Entertainment</a
-          >
+          <a href="https://indianexpress.com/section/entertainment/">Entertainment</a>
           <a href="https://indianexpress.com/section/lifestyle/">Lifestyle</a>
           <a href="https://indianexpress.com/section/technology/">Technology</a>
           <a href="https://indianexpress.com/videos/">Videos</a>
@@ -93,12 +94,10 @@
           <a href="https://indianexpress.com/audio/">Audio</a>
           <a href="https://indianexpress.com/section/education/">Education</a>
           <a href="https://indianexpress.com/about/express-premium/">Premium</a>
-          <a href="https://indianexpress.com/section/express-exclusive/"
-            >Investigations</a
-          >
+          <a href="https://indianexpress.com/section/express-exclusive/">Investigations</a>
         </div>
         <div>
-          <button onClick="subscribeBtn()">SUBSCRIBE</button>
+          <button>SUBSCRIBE</button>
           <button>Sign In</button>
         </div>
       </div>
@@ -116,173 +115,34 @@
       </div>
     </div>
     <!-- Header End Here -->
+    <!-- Explained Page Starts Here -->
 
-    <!-- Home Page Work Here -->
-    <div id="topHead">
-      <div id="topSubHead1">
-        <div>
-          <img
-            src="https://images.indianexpress.com/2014/03/The-PFI-office-in-New-Delhi.-Locked-and-sealed.-PTI.jpg?w=475"
-            alt=""
-          />
-        </div>
-        <div>
-          <h1>
-            Terror links to training sites to targeted killings: Govt's case
-            against PFI
-          </h1>
-          <p>
-            According to a document of the Ministry of Home Affairs (MHA), these
-            cases have been registered, among others, under provisions of the
-            UAPA, Indian Penal Code and Arms Act.
-          </p>
-        </div>
+    <div id="topTab">
+      <div>
+        <p><span id="goHomePage">Home</span> / Explained</p>
       </div>
-      <div id="topSubHead2">
-        <div>
-          <p>
-            Killings, attacks by PFI cited in Home Ministry's order banning
-            outfit
-          </p>
-        </div>
-        <div>
-          <p>Appealing the PFI ban: Here is how the UAPA tribunal works</p>
-        </div>
-        <div>
-          <p>
-            Congress, regional parties cautious; some leaders seek RSS ban too
-          </p>
-        </div>
-      </div>
+      <div id="headBar"></div>
     </div>
-    <div id="mainPage">
-      <div id="sectionLeft">
-        <div id="part1">
-          <div>
-            <h3>
-              Emergency response phase since Galwan incident over: China envoy
-            </h3>
-            <img
-              src="https://images.indianexpress.com/2013/01/Galwan-1.jpg?w=430"
-              alt=""
-            />
-            <p>
-              This is a significant framing, as Beijing has, for the first time,
-              sought to link its redline on Taiwan with the India-China border
-              situation.
-            </p>
-          </div>
-          <div id="part1Data"></div>
-        </div>
-        <div id="part2">
-          <div id="topNews">
-            <h4>TOP NEWS</h4>
-            <div>
-              <p>
-                Bureaucrat breaks down while interacting with child hurt in UP
-                accident
-              </p>
-              <img
-                src="https://images.indianexpress.com/2022/09/Lakhimpur-bus-collission.png?resize=450%2C250&w=210"
-                alt=""
-              />
-            </div>
-          </div>
-          <div id="latestNews">
-            <div id="latestData">
-              <h4>LATEST NEWS</h4>
-            </div>
-          </div>
-        </div>
-        <div id="part3">
-          <div>
-            <h3>
-              Emergency response phase since Galwan incident over: China envoy
-            </h3>
-            <img
-              src="https://images.indianexpress.com/2022/09/kindle-scribe-fb.jpg?w=430"
-              alt=""
-            />
-            <p>
-              This is a significant framing, as Beijing has, for the first time,
-              sought to link its redline on Taiwan with the India-China border
-              situation.
-            </p>
-          </div>
-          <div id="part3Data"></div>
-        </div>
-        <div id="cityNews">
-          <h3>DELHI NEWS</h3>
-          <select id="citySelect">
-            <option value="delhi">Delhi</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="pune">Pune</option>
-            <option value="ahmedabad">Ahmedabad</option>
-            <option value="hydrabad">Hydrabad</option>
-          </select>
-        </div>
-        <div id="part4">
-          <div id="cityDataFetch">
-            <img
-              src="https://images.indianexpress.com/2022/09/delhi-hc-2.jpg?w=303"
-              alt=""
-            />
-            <div>
-              <h3>
-                Delhi HC Bar election results out, president has 'long-term'
-                vision for association
-              </h3>
-            </div>
-          </div>
-          <div id="part4Data">
-            <p>
-              Harpic vs Domex ad case: Advertiser cannot disparage, defame goods
-              of competitor, says Delhi HC
-            </p>
-            <p>Delhi's IGI Airport becomes India's first '5G-ready' airport</p>
-            <p>Quack arrested for death of Maruti Suzuki intern in Gurugram</p>
-            <p>
-              Delhi Police conduct mock drill of emergency response plan in
-              Northeast district
-            </p>
-          </div>
+    <div id="mainContainer">
+      <div id="frontPost">
+        <div>
+          <p>
+            New highway to cut Vijayawada-Bengaluru travel time by 5 hours: Here
+            are the details
+          </p>
         </div>
       </div>
-
-      <div id="sectionRight">
-        <div id="expressView">
-          <h4>THE EXPRESS VIEW</h4>
-          <div>
-            <p>
-              After the ban: The political challenge posed by PFI still needs
-              tackling
-            </p>
-            <img
-              src="https://images.indianexpress.com/2022/09/edit-28.jpg?w=210"
-              alt=""
-            />
-          </div>
-        </div>
-        <div id="opinion">
-          <h4>OPINION</h4>
-        </div>
-        <div id="lifeStyle">
-          <h4>LIFESTYLE</h4>
-          <div>
-            <p>
-              After the ban: The political challenge posed by PFI still needs
-              tackling
-            </p>
-            <img
-              src="https://images.indianexpress.com/2022/09/edit-28.jpg?w=210"
-              alt=""
-            />
-          </div>
-        </div>
+      <div id="cardGrid1"></div>
+      <div id="cardGrid2Logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/24/The_Indian_Express_logo.svg"
+          alt=""
+        />
       </div>
+      <div id="cardGrid2"></div>
     </div>
-    <!-- Home Page Work End Here -->
 
+    <!-- Explained Page Ends Here -->
     <!-- Footer Starts Here -->
     <div id="backgroundBox">
       <div id="container">
@@ -397,5 +257,5 @@
 <!-- Script Files Linked Here -->
 <script src="/Header/HeaderScript.js"></script>
 <script src="/Footer/FooterScript.js"></script>
-<script src="/HomeData.js"></script>
-<script src="/HomePage.js"></script>
+<script src="/ExplainedPageData.js"></script>
+<script src="/ExplainedPage.js"></script>

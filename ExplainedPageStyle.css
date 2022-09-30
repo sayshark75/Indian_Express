@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+/* font-family: 'PT Serif', serif; */
+/* color: #d70000; */
+/* border-right: 1px solid #d3d3d3; */
+/* border-top: 1px dotted gray; */
+
+#topTab{
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  font-family: sans-serif;
+  
+}
+#topTab p,#topTab h3{
+  cursor: pointer;
+}
+#topTab>div:first-child{
+  color: #787676;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#goHomePage{
+  color: #d70000;
+}
+#headBar{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 10px;
+}
+#headBar>div{
+  padding: 10px;
+}
+#headBar>div>h3{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+#mainContainer{
+  width: 65%;
+  margin: auto;
+}
+#mainContainer p,#mainContainer h3{
+  cursor: pointer;
+}
+#frontPost{
+  background-image: url("https://images.indianexpress.com/2022/09/highway-traffic-1200.jpg?w=900") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+#frontPost>div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 20px;
+  background-color: white;
+  width: 50%
+}
+#frontPost>div>p{
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#frontPost>div>p:hover{
+color: #ff6000;
+}
+#cardGrid1{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+#cardGrid1>div{
+  padding: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 25px;
+  font-weight: 600;
+}
+#cardGrid1>div>img{
+  width: 100%;
+}
+#cardGrid1>div>p:hover{
+  color: #ff6000;
+}
+#cardGrid2Logo{
+  width: 100%;
+}
+
+#cardGrid2Logo>img{
+width: 250px;
+}
+#cardGrid2>div>p:hover{
+  text-decoration: underline;
+}
+#cardGrid2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+#cardGrid2>div{
+  padding: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 25px;
+  font-weight: 600;
+}
+#cardGrid2>div>img{
+  width: 100%;
+}

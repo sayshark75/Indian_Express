@@ -23,8 +23,10 @@ body {
   border-bottom: 1px solid #787677;
 }
 #topCategories > div:nth-child(2) {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   justify-content: space-between;
+  align-items: center;
   font-size: 13px;
   line-height: 18px;
 }
@@ -127,8 +129,11 @@ body {
 
 /* Medium Screen */
 @media all and (max-width:1080px){
+  #container {
+    width: 80%;
+  }
   #topCategories > div:nth-child(2){
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
   }
   #express{
     flex-wrap: wrap;
@@ -140,6 +145,12 @@ body {
 
 /* Small Screen */
 @media all and (min-width:320px) and (max-width:900px){
+  #container {
+    width: 95%;
+  }
+  #topCategories > div:nth-child(2){
+    grid-template-columns: repeat(1,1fr);
+  }
   #lastBox {
     flex-wrap: wrap;
   }
