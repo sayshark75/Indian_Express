@@ -38,6 +38,14 @@ function createDate(week, month) {
 
 document.querySelector("#dateJS").innerHTML=createDate(week, month);
 
+let signInFlag = JSON.parse(localStorage.getItem("loginFlag")) || false;
+
+if(signInFlag){
+  document.querySelector("#signInBtn").innerHTML="My Account"
+}else{
+  document.querySelector("#signInBtn").innerHTML="Sign In"
+}
+
 let newsLetterImg = [
   "https://indianexpress.com/wp-content/themes/indianexpress/images/facebook-icon.svg",
   "https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-icon.svg",
@@ -68,4 +76,14 @@ function goHome(){
 
 function subscribeBtn(){
   window.open("https://indianexpress.com/subscribe/","_blank");
+}
+let isLoginData = JSON.parse(localStorage.getItem("loginFlag"))
+function signInBtn(){
+  if(signInFlag){
+    window.location.href = "/LogOut.html"
+  }else if(isLoginData!==null){
+    window.location.href = "/SignIn.html"
+  }else{
+    window.location.href = "/SignUp.html"
+  }
 }

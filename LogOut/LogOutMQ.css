@@ -1,0 +1,15 @@
+@media all and (max-width:575px) {
+  #topBar > div {
+    width: 30%;
+  }
+  #topBar > div > a {
+    display: none;
+  }
+  #topBar > div > i {
+    margin-right: 20px;
+  }
+  #topBar > div > img {
+    width: 200px;
+  }
+  
+}
