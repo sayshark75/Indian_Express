@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking Part -->
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Styles CSS Linking -->
+    <link rel="stylesheet" href="/SignUp/SignUpStyle.css" />
+    <link rel="stylesheet" href="/SignUp/SignUpMQ.css">
+
+    <!-- Favicon and Title -->
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <title>Indian Express / Sign - Up</title>
+  </head>
+  <body>
+    <!-- Top Bar Work Here -->
+    <div id="topBar">
+      <div>
+        <i class="fa-solid fa-arrow-left"></i>
+        <a href="/HomePage.html">Back to Indianexpress</a>
+      </div>
+      <div>
+        <img
+          src="https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/indian-express-logo-n.svg"
+          alt=""
+        />
+      </div>
+      <div></div>
+    </div>
+    <div id="backDiv">
+      <div id="container">
+        <div id="topView">
+          <h2>Welcome back</h2>
+        </div>
+        <div id="divider">
+          <div><p>_________________</p></div>
+          <p>or</p>
+          <div><p>_________________</p></div>
+        </div>
+        <div id="text">
+          <p>Enter the email address or mobile number associated with your account to sign in.</p>
+        </div>
+        <form>
+          <div id="inputBox">
+            <i class="size fa-solid fa-at"></i>
+            <input id="email" type="email" placeholder="Phone Number / Email" required/>
+          </div>
+          <div id="inputBox">
+            <i class="size fa-solid fa-lock"></i>
+            <input id="pass" type="password" placeholder="Password" required/>
+          </div>
+          <div id="inputBox">
+            <i class="size fa-solid fa-lock"></i>
+            <input id="cpass" type="password" placeholder="Confirm Password" required/>
+          </div>
+          <div id="agreement">
+            <input id="newsLetter" type="checkbox"/>
+            <p>Yes, I'd like to receive The Indian Express daily newsletter.</p>
+          </div>
+          <div id="agreement">
+            <input id="tandc" type="checkbox" required/>
+            <p>Accept <a href="https://indianexpress.com/terms-and-conditions">Terms and Conditions</a> and our <a href="https://indianexpress.com/privacy-policy">privacy policy</a></p>
+          </div>
+          <div id="submitBtn">
+            <button type="submit">
+              <h3>Register</h3>
+            </button>
+          </div>
+          <div id="createAcc">
+            <p>Already have an Account</p>
+            <h4><a href="/SignIn.html">Sign In</a></h4>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/SignUp/SignUpScript.js"></script>

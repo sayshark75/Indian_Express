@@ -24,7 +24,7 @@
 }
 #headBar{
   display: grid;
-  grid-template-columns: repeat(10,1fr);
+  grid-template-columns: repeat(10,auto);
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #c3c3c3;
