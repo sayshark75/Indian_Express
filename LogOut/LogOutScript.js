@@ -1,4 +1,4 @@
 setTimeout(function(){
   localStorage.setItem("loginFlag",false);
-  window.location.href = "/HomePage.html";
+  window.location.href = "/index.html";
 },3000)

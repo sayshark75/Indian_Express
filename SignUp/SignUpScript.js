@@ -16,8 +16,13 @@ let topButtons = [
   },
 ];
 
+document.querySelector("#backBar").addEventListener("click",(e) => {
+  window.location.href = "/index.html"
+});
+
 topButtons.forEach((elem) => {
   let divTag = document.createElement("div");
+  divTag.style.cursor = "pointer";
   let imgTag = document.createElement("img");
   imgTag.src = elem.imgSrc;
   let pTag = document.createElement("p");
@@ -26,6 +31,7 @@ topButtons.forEach((elem) => {
   document.querySelector("#topView").append(divTag);
 });
 
+let credentials = JSON.parse(localStorage.getItem("signUpData")) || [];
 let myForm = document.querySelector("form");
 myForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -37,7 +43,8 @@ myForm.addEventListener("submit", (e) => {
       email: myForm.email.value,
       password: myForm.pass.value,
     };
-    localStorage.setItem("signUpData", JSON.stringify(formData));
+    credentials.push(formData);
+    localStorage.setItem("signUpData", JSON.stringify(credentials));
     alert("Signed Up!, Please Login Again");
     window.location.href = "/SignIn.html";
   } else {
