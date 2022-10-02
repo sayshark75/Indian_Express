@@ -14,6 +14,10 @@ body {
   border-bottom: 1px solid gray;
 }
 
+#backBar{
+  cursor: pointer;
+}
+
 #topBar > div {
   width: 300px;
   display: flex;

@@ -13,6 +13,9 @@ body {
   align-items: center;
   border-bottom: 1px solid gray;
 }
+#backBar{
+  cursor: pointer;
+}
 
 #topBar > div {
   width: 300px;

@@ -28,5 +28,5 @@ dualCards.forEach((elem) => {
 
 // Go To Home Page
 document.querySelector("#goHomePage").addEventListener("click",(e) => {
-  window.location.href = "/HomePage.html";
+  window.location.href = "/index.html";
 });

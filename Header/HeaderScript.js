@@ -71,7 +71,7 @@ newsLetterImg.forEach((elem,i) => {
 });
 
 function goHome(){
-  window.location.href = "/HomePage.html"
+  window.location.href = "/index.html"
 }
 
 function subscribeBtn(){
