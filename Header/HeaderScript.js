@@ -46,6 +46,106 @@ if(signInFlag){
   document.querySelector("#signInBtn").innerHTML="Sign In"
 }
 
+let languageData = [
+  {
+    link: "",
+    title: "ENGLISH",
+  },
+  {
+    link: "https://tamil.indianexpress.com/",
+    title: "தமிழ்",
+  },
+  {
+    link: "https://bengali.indianexpress.com/",
+    title: "বাংলা",
+  },
+  {
+    link: "https://malayalam.indianexpress.com/",
+    title: "മലയാളം",
+  },
+  {
+    link: "https://www.jansatta.com/",
+    title: "हिंदी",
+  },
+  {
+    link: "https://www.loksatta.com/",
+    title: "मराठी",
+  },
+];
+
+let linkDiv = [
+  {
+    link: "/index.html",
+    title: "Home",
+  },
+  {
+    link: "/ExplainedPage.html",
+    title: "Explained",
+  },
+  {
+    link: "https://indianexpress.com/section/political-pulse/",
+    title: "Political Pulse",
+  },
+  {
+    link: "https://indianexpress.com/section/india/",
+    title: "India",
+  },
+  {
+    link: "https://indianexpress.com/section/cities/",
+    title: "Cities",
+  },
+  {
+    link: "https://indianexpress.com/section/opinion/",
+    title: "Openion",
+  },
+  {
+    link: "https://indianexpress.com/section/entertainment/",
+    title: "Entertainment",
+  },
+  {
+    link: "https://indianexpress.com/section/lifestyle/",
+    title: "Lifestyle",
+  },
+  {
+    link: "https://indianexpress.com/section/technology/",
+    title: "Technology",
+  },
+  {
+    link: "https://indianexpress.com/videos/",
+    title: "Videos",
+  },
+  {
+    link: "https://indianexpress.com/section/sports/",
+    title: "Sports",
+  },
+  {
+    link: "https://indianexpress.com/audio/",
+    title: "Audio",
+  },
+  {
+    link: "https://indianexpress.com/section/education/",
+    title: "Education",
+  },
+  {
+    link: "https://indianexpress.com/about/express-premium/",
+    title: "Premium",
+  },
+  {
+    link: "https://indianexpress.com/section/express-exclusive/",
+    title: "Investigations",
+  },
+];
+
+let buttonSection = [
+  "Crossword & Sudoku",
+  "UPSC Special",
+  "Everyday Explainers",
+  "Health Specials",
+  "Academic Councelling",
+  "Follow Authors",
+  "Cricket",
+];
+
 let newsLetterImg = [
   "https://indianexpress.com/wp-content/themes/indianexpress/images/facebook-icon.svg",
   "https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-icon.svg",
@@ -87,3 +187,30 @@ function signInBtn(){
     window.location.href = "/SignUp.html"
   }
 }
+
+
+languageData.forEach((elem, i) => {
+  let aTag = document.createElement("a");
+  aTag.href = elem.link;
+  aTag.innerHTML = elem.title;
+  let pTag = document.querySelector("#linksBar");
+  if (i == 0) {
+    pTag.append(aTag);
+  } else {
+    pTag.append(" | ");
+    pTag.append(aTag);
+  }
+});
+
+linkDiv.forEach((elem) => {
+  let aTag = document.createElement("a");
+  aTag.href = elem.link;
+  aTag.innerHTML = elem.title;
+  document.querySelector("#linkDiv").append(aTag);
+});
+
+buttonSection.forEach((elem) => {
+  let btnTag = document.createElement("button");
+  btnTag.innerHTML = elem;
+  document.querySelector("#buttonSection").append(btnTag);
+})
