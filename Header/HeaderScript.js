@@ -213,4 +213,12 @@ buttonSection.forEach((elem) => {
   let btnTag = document.createElement("button");
   btnTag.innerHTML = elem;
   document.querySelector("#buttonSection").append(btnTag);
-})
+});
+
+let boxData1 = ["e-paper","Premium","India","Cities"];
+let boxData2 = ["Opinion","Political Pulse","Explained","Science"];
+let boxData3 = ["Sports","World","Business","Entertainment"];
+let boxData4 = ["Health","Lifestyle","Technology","Education"];
+let boxData5 = ["Eye","Trending","Investigations","Newsletters"];
+let boxData6 = ["Photos","Videos","Audio","Web Stories"];
+
