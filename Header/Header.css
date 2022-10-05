@@ -53,6 +53,42 @@ body {
   border: none;
   cursor: pointer;
 }
+/* BootStrap Section Box Work Here */
+/* .boxPadding{
+    padding: 0 75px;
+} */
+.boxColor{
+  background-color: #efefef;
+}
+.navbar {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  border-top: 1px solid rgb(209, 209, 209);
+  width: 100%;
+  padding: 0 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.navbar button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.navbar>div>button:nth-child(1){
+  background-color: #FFB900;
+}
+.navbar>div>button:nth-child(2){
+  color: white;
+  font-weight: 500;
+  background-color: #3b4057;
+}
+
+/* Bootstrap Sectin Box End Here */
 
 /* Navbar CSS Starts Here */
 #navbarContainer{
