@@ -4,6 +4,7 @@
   }
   #topSubHead1{
     flex-wrap: wrap;
+    justify-content: center;
   }
   #topSubHead1>div{
     padding-left: 20px;
@@ -24,6 +25,7 @@
   #part2{
     flex-wrap: wrap;
   }
+  
   #part3{
     flex-wrap: wrap;
   }
@@ -39,6 +41,7 @@
   }
 }
 
+
 @media all and (min-width:320px) and (max-width:720px){
   #topHead{
     width: 90%;
@@ -48,5 +51,27 @@
   }
   #sectionRight{
     width: 95%;
+  }
+  #part2>div:nth-child(1){
+    width: 90%;
+    margin: auto;
+  }
+  #part2>div:nth-child(2){
+    width: 90%;
+  }
+  #part3>div:nth-child(1){
+    width: 90%;
+  }
+  #part3>div:nth-child(2){
+    width: 90%;
+  }
+  #part4>div:nth-child(1){
+    width: 90%;
+  }
+  #part4>div:nth-child(2){
+    width: 90%;
+  }
+  #part4>div:nth-child(1)>div>h3{
+    width: 90;
   }
 }
