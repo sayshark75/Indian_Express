@@ -215,6 +215,12 @@ buttonSection.forEach((elem) => {
   document.querySelector("#buttonSection").append(btnTag);
 });
 
+buttonSection.forEach((elem) => {
+  let btnTag = document.createElement("button");
+  btnTag.innerHTML = elem;
+  document.querySelector(".buttonSection").append(btnTag);
+});
+
 let boxData1 = ["e-paper","Premium","India","Cities"];
 let boxData2 = ["Opinion","Political Pulse","Explained","Science"];
 let boxData3 = ["Sports","World","Business","Entertainment"];
@@ -222,3 +228,39 @@ let boxData4 = ["Health","Lifestyle","Technology","Education"];
 let boxData5 = ["Eye","Trending","Investigations","Newsletters"];
 let boxData6 = ["Photos","Videos","Audio","Web Stories"];
 
+
+boxData1.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box1").append(pTag);
+});
+
+boxData2.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box2").append(pTag);
+});
+
+boxData3.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box3").append(pTag);
+});
+
+boxData4.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box4").append(pTag);
+});
+
+boxData5.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box5").append(pTag);
+});
+
+boxData6.forEach((elem) => {
+  let pTag = document.createElement("p");
+  pTag.innerText = elem;
+  document.querySelector("#box6").append(pTag);
+});

@@ -27,9 +27,11 @@ cursor: pointer;
 }
 #topSubHead1 div{
   width: 440px;
+  margin-right: 20px;
 }
 #topSubHead1>div>img{
   width: 100%;
+  
 }
 #topSubHead2{
   margin-top: 20px;

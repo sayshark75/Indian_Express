@@ -45,7 +45,7 @@ body {
   width: 20px;
   margin: 5px;
 }
-#topBar button{
+#topBar>div>button{
   font-size: 16px;
   margin: 5px;
   padding: 6px 10px;
@@ -53,6 +53,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
 /* BootStrap Section Box Work Here */
 /* .boxPadding{
     padding: 0 75px;
@@ -71,8 +72,8 @@ body {
   
 }
 .navbar button{
-  padding: 0;
-  margin: 0;
+  padding: 8px 14px;
+  margin: 5px;
   border: none;
   outline: none;
   border-radius: 3px;
@@ -87,6 +88,76 @@ body {
   font-weight: 500;
   background-color: #3b4057;
 }
+
+.outBox{
+  padding: 2px 0;
+  overflow: visible;
+}
+
+
+#middleBox{
+  border-top: 1px solid rgb(209, 209, 209);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#middleBox>div{
+  margin: 10px;
+  padding: 10px;
+}
+#middleBox>div:last-child{
+  border-left: 1px solid grey;
+}
+
+#footerBox{
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 220px;
+  margin: 0px;
+  background-color: #efefef;
+}
+
+/* BootStrap BottomBar Start Here */
+
+.bottomBar {
+  font-family: sans-serif;
+  border-top: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 90%;
+  margin: auto;
+  margin-top: 3px;
+  font-size: 12px;
+  
+}
+.bottomBar>div{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8,auto);
+  align-items: center;
+}
+
+.bottomBar p {
+  padding: 5px;
+  margin: 5px;
+  color: #d70000;
+}
+.bottomBar button {
+  margin: 8px;
+  border: none;
+  outline: none;
+  padding: 2px 12px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+.bottomBar button:hover {
+  color: #d70000;
+  cursor: pointer;
+}
+
+/* Bootstrap Bottom Bar End Here */
 
 /* Bootstrap Sectin Box End Here */
 
@@ -270,3 +341,4 @@ body {
     flex-direction: column;
   }
 }
+
