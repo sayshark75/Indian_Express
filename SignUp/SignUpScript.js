@@ -17,7 +17,7 @@ let topButtons = [
 ];
 
 document.querySelector("#backBar").addEventListener("click",(e) => {
-  window.location.href = "/index.html"
+  window.location.href = "./index.html"
 });
 
 topButtons.forEach((elem) => {
@@ -38,7 +38,7 @@ myForm.addEventListener("submit", (e) => {
   let myPass = myForm.pass.value;
   if (myPass !== myForm.cpass.value) {
     alert("Password Does Not Match");
-  } else if (myPass.length === 8) {
+  } else if (myPass.length >= 8) {
     let formData = {
       email: myForm.email.value,
       password: myForm.pass.value,
@@ -46,7 +46,7 @@ myForm.addEventListener("submit", (e) => {
     credentials.push(formData);
     localStorage.setItem("signUpData", JSON.stringify(credentials));
     alert("Signed Up!, Please Login Again");
-    window.location.href = "/SignIn.html";
+    window.location.href = "./SignIn.html";
   } else {
     alert("Password Must Be Minimum 8 Characters Long");
   }

@@ -17,7 +17,7 @@ let topButtons = [
 ];
 
 document.querySelector("#backBar").addEventListener("click",(e) => {
-  window.location.href = "/index.html"
+  window.location.href = "./index.html"
 });
 
 topButtons.forEach((elem) => {
@@ -42,7 +42,7 @@ signUpData.forEach((elem) => {
       if(elem.password === myForm.pass.value){
         alert("Logged In Successfully!");
         localStorage.setItem("loginFlag", true);
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
       }else {
         alert("Invalid Credentials");
       }

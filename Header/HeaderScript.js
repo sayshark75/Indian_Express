@@ -75,11 +75,11 @@ let languageData = [
 
 let linkDiv = [
   {
-    link: "/index.html",
+    link: "./index.html",
     title: "Home",
   },
   {
-    link: "/ExplainedPage.html",
+    link: "./ExplainedPage.html",
     title: "Explained",
   },
   {
@@ -171,7 +171,7 @@ newsLetterImg.forEach((elem,i) => {
 });
 
 function goHome(){
-  window.location.href = "/index.html"
+  window.location.href = "./index.html"
 }
 
 function subscribeBtn(){
@@ -180,11 +180,11 @@ function subscribeBtn(){
 let isLoginData = JSON.parse(localStorage.getItem("loginFlag"))
 function signInBtn(){
   if(signInFlag){
-    window.location.href = "/LogOut.html"
+    window.location.href = "./LogOut.html"
   }else if(isLoginData!==null){
-    window.location.href = "/SignIn.html"
+    window.location.href = "./SignIn.html"
   }else{
-    window.location.href = "/SignUp.html"
+    window.location.href = "./SignUp.html"
   }
 }
 
